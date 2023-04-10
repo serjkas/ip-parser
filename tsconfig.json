@@ -1,0 +1,17 @@
+{
+  // https://www.typescriptlang.org/tsconfig#compilerOptions
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": ["es2020"],
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "types": ["node"],
+    "outDir": "dist",
+    "module": "esnext",
+    "target": "esnext"
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts"]
+}

@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "ts-node": "ts-node --esm",
+    "build": "tsc"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  }
+}
