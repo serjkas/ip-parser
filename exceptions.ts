@@ -54,3 +54,14 @@ writeStream.on("error", (err) => {
   console.error(`There is an error writing the file ${pathName} => ${err}`);
 });
 writeStream.end();
+
+const writeStreamIp = fs.createWriteStream("only_ips.txt");
+const ipName = writeStreamIp.path;
+newResults?.forEach((value) => writeStreamIp.write(`${value.ip}\n`));
+writeStreamIp.on("finish", () => {
+  console.log(`wrote all the array data to file ${ipName}`);
+});
+writeStreamIp.on("error", (err) => {
+  console.error(`There is an error writing the file ${ipName} => ${err}`);
+});
+writeStreamIp.end();
